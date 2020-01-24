@@ -1,7 +1,8 @@
 #include <iostream>
 using std::cin;
 using std::cout;
-using std::endl;
+using std::endl;]
+using std::strlen;
 
 // Prototypes
 void getSentence(char sentence[]);
@@ -15,7 +16,7 @@ bool isValid(const char sentence[]);
 int main()
 {
 	/* ***Comment in to run test cases*** */
-	runTestCases();
+	//runTestCases();
 
 	while (true)
 	{
@@ -88,7 +89,7 @@ bool isValid(const char sentence[])
 {
 	for (int i = 0; i < strlen(sentence); i++)
 	{
-		//Capital letters: 65 – 90
+		//Capital letters: 65 â€“ 90
 		//Space: 32
 		if ((toupper(sentence[i]) >= 65 && toupper(sentence[i]) <= 90) || (sentence[i] == 32))
 		{
